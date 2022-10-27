@@ -73,3 +73,20 @@ h2 {
   opacity: 0;
   transition: 300ms ease-in;
 }
+
+@media all and (max-width: 600px) {
+
+  .mt-1 {
+    display: none;
+  }
+
+}
+
+
+@media all and (max-width: 370px) {
+
+  .doCol {
+    flex-direction: column;
+  }
+
+}

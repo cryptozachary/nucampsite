@@ -17,7 +17,7 @@ const DisplayList = () => {
     console.log('display items:', items);
 
     return (
-        <Row>
+        <div style={{ display: "flex", flexWrap: "wrap" }}>
             {items.map((item, idx) => {
                 const { featuredItem, isLoading, errMsg } = item;
                 if (isLoading) {
@@ -34,7 +34,7 @@ const DisplayList = () => {
                     )
                 );
             })}
-        </Row>
+        </div>
     );
 };
 

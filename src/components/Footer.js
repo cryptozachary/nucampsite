@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className='site-footer'>
             <Container>
-                <Row>
+                <Row className='justify-content-between'>
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
                         <h5>Links</h5>
                         <ul className='list-unstyled'>

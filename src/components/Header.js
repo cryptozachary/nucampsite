@@ -16,11 +16,12 @@ const Header = () => {
 
     return (
         <Navbar dark color='primary' sticky='top' expand='md'>
-            <NavbarBrand className='ms-5' href='/'>
-                <img src={NucampLogo} alt='nucamp logo' className='float-start' />
-                <h1 className='mt-1'>NuCamp</h1>
+            <NavbarBrand className='ms-5' href='/' >
+                <img src={NucampLogo} alt='nucamp logo' style={{ margin: "0", alignItems: "center" }} />
             </NavbarBrand>
+            <h1 className='mt-1' style={{ color: "white" }}>NuCamp</h1>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
+            <UserLoginForm />
             <Collapse isOpen={menuOpen} navbar>
                 <Nav className='ms-auto' navbar>
                     <NavItem>
@@ -45,7 +46,6 @@ const Header = () => {
                     </NavItem>
                 </Nav>
             </Collapse>
-            <UserLoginForm />
         </Navbar>
     );
 };
